@@ -1,0 +1,50 @@
+// variable color
+$color-gray-nav: #FAFAFA;
+$color-gray-line: rgb(216, 208, 208);
+$color-gray-text-1: rgb(92, 85, 85);
+
+$color-orange-nav: #FFAA09;
+// variable font-size
+$fs-0: 10px;
+$fs-1: 12px;
+$fs-2: 14px;
+$fs-3: 16px;
+$fs-4: 18px;
+$fs-5: 20px;
+$fs-6: 22px;
+$fs-7: 24px;
+//variable margin
+$mg-0: 5px;
+$mg-1: 10px;
+$mg-2: 20px;
+$mg-3: 25px;
+$mg-4: 40px;
+$mg-5: 50px;
+
+//variable border-radius
+$border-radius: 2px;
+
+//variable padding
+$pd-0: 5px;
+$pd-1: 10px;
+$pd-2: 20px;
+$pd-3: 25px;
+$pd-4: 40px;
+$pd-5: 50px;
+
+//variable line-height
+$line-height-0: 1.43;
+
+//variable font-weight
+$fw-normal: normal;
+$fw-bold-0: 400;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+//break points
+$breakpoints: (
+  "extra-large": 1200px,
+  "large": 992px,
+  "medium": 768px,
+  "small": 576px
+);

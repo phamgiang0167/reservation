@@ -1,0 +1,2 @@
+export const SELECT_SLOTS = "SELECT_SLOTS"
+export const CLEAR_SLOTS = "CLEAR_SLOTS"

@@ -1,0 +1,21 @@
+.home__wrapper{
+    padding: 10px;
+    background-color: rgb(243, 236, 236);
+    min-height: 100vh;
+    @include mediaQueryMin('medium'){
+        padding: 10px 3rem;
+    }
+    @include mediaQueryMin('large'){
+        padding: 10px 10rem;
+    }
+    
+    
+       
+    
+    
+    .time__wrapper{
+        margin-top: 10px;
+        padding: 20px;
+        background-color: #fff;
+    }
+}

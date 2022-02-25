@@ -1,0 +1,9 @@
+$btnClear-color: #4693dd;
+.btn-clear-course{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: $btnClear-color;
+    font-weight: bold;
+    display: inline-block;
+}

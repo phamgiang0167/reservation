@@ -1,0 +1,13 @@
+$time-pd: 20px;
+.time{
+    padding: $time-pd;
+    background-color: #fff;
+}
+button.rec-dot{
+    background-color: transparent;
+    display: none;
+  }
+  
+  button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
+    box-shadow: transparent;
+  }

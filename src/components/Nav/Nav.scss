@@ -1,0 +1,17 @@
+.nav__container{
+    .nav__name{
+        text-align: center;
+        font-weight: bold;
+        font-size: $fs-6;
+        padding: 10px;
+        background-color: $color-gray-nav;
+        border-top: 2px solid $color-orange-nav;
+        -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+        @include mediaQueryMin('large'){
+            text-align: left;
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+$homestep-fs-small: 0.8rem;
+$homestep-pd-small: 5px;
+$homestep-pd-medium: 12px;
+$homestep-pd-large: 12px 20px;
+$homestep-bg:#d8d8d8;
+.home__step{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    .step{
+        flex-basis: 100%;
+        width: 33.33%;
+        color: #fff;
+        font-weight: bold;
+        padding: $homestep-pd-small;
+        line-height: 100%;
+        font-size: $homestep-fs-small;
+        text-align: center;
+        position: relative;
+        @include mediaQueryMin('medium'){
+            padding: $homestep-pd-medium;
+        }
+        @include mediaQueryMin('large'){
+            padding: $homestep-pd-large;
+        }
+        &.step-1,&.step-2,&.step-3{
+            background-color: $homestep-bg;
+        }
+        &.step-1::after{
+            content: "";
+            
+            width: 0; 
+            height: 100%; 
+            
+        }
+    }
+    
+}

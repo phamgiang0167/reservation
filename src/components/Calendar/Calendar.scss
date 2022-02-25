@@ -1,0 +1,20 @@
+.calendar{
+    width: 100%;
+    border: 1px solid $color-gray-line;
+    position: relative;
+    input{
+        width: 100%;
+        padding: 10px 0 ;
+        line-height: 17px;
+        text-align: center;
+        border: 0px transparent;
+        color: $color-gray-text-1;
+        
+    }
+    .calendar__date{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+}

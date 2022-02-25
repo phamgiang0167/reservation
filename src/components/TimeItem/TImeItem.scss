@@ -1,0 +1,16 @@
+$timeItem-color:#FFAA09;
+.timeItem__wrapper{
+    &.clicked{
+        background-color: #eec271;
+    }
+    transition: all .5s;
+    cursor: pointer;
+    border: 1px solid $color-gray-line;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    padding: 10px;
+    text-align: center;
+    .fa-solid{
+        color: $timeItem-color;
+    }
+}
