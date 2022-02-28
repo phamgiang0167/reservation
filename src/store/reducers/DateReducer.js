@@ -1,6 +1,6 @@
 import {SELECT_DATE, CLEAR_DATE} from "../constants/DateConstant"
 const inititalState = {
-    status: false,
+    status: true,
     date: new Date()
 }
 

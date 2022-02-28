@@ -1,0 +1,26 @@
+$fmDetail-fs-smallest: 0.8rem;
+$fmDetail-fs-small: 0.9rem;
+$fmDetail-fs-medium: 1rem;
+.formatDetail__wrapper{
+    border-top: 1px solid $color-gray-line;
+    padding: 10px 0px;
+    font-size: $fmDetail-fs-smallest;
+    @include mediaQueryMin("small"){
+        font-size: $fmDetail-fs-small;
+    }
+    p{
+        &:nth-child(1){
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        &:nth-child(2){
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: orangered;
+        }
+        &:nth-child(3){
+            margin-bottom: 10px;
+            color: $color-gray-text-1;
+        }
+    }
+}

@@ -1,8 +1,14 @@
+$st-fs: 0.7rem;
+$st-fs-medium: 0.9rem;
 .section__title{
     padding: 10px 0;
     color: $color-gray-text-1;
+    font-size: $st-fs;
+    @include mediaQueryMin("medium"){
+        font-size: $st-fs-medium;
+    }
     span{
         font-weight: bold;
-        font-size: 1rem;
+        font-size: calc(1rem + $st-fs);
     }
 }

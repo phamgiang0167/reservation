@@ -3,13 +3,15 @@ import courseReducer from "./reducers/CourseReducer"
 import slotsReducer from "./reducers/SlotsReducer";
 import dateReducer from "./reducers/DateReducer";
 import timeReducer from "./reducers/TimeReducer"
+import seatReducer from "./reducers/SeatReducer";
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 const rootReducer = combineReducers({
     courseReducer,
     slotsReducer,
     dateReducer,
-    timeReducer
+    timeReducer,
+    seatReducer
 })
 
 const store = createStore(

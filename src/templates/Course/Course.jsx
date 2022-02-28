@@ -4,8 +4,11 @@ import courses from "../../data/courses"
 import CourseItem from "../../components/CourseItem/CourseItem"
 import { actClearCourse } from '../../store/actions/CourseAction'
 import SectionTitle from '../../components/Section_title/SectionTitle'
-import BtnClrCourse from '../../components/Button/ButtonClearCourse/BtnClrCourse'
+import BtnClrItem from '../../components/Button/ButtonClearItem/BtnClrItem'
 import { actClearSlots } from '../../store/actions/SlotsAction'
+import { actClearDate } from "../../store/actions/DateAction"
+import { actClearTime } from "../../store/actions/TimeAction"
+import {actClearSeat} from "../../store/actions/SeatAction"
 class Course extends Component {
     listCourses = courses
     renderCourseList = (coursePicked, status) => {
@@ -24,14 +27,23 @@ class Course extends Component {
         })
     }
     render() {
-        const { courseReducer, clearCourse, clearSlots } = this.props
+        const { courseReducer, clearCourse, clearSlots, clearDate, clearTime, clearSeat} = this.props
         return (
 
             <section className='course__wrapper'>
                 <SectionTitle>
                     Please select a
                     <span> course</span>
-                    <BtnClrCourse style={{float: "right"}} clearCourse={clearCourse} clearSlots={clearSlots}>Change</BtnClrCourse>
+                    <BtnClrItem
+                        style={{ float: "right" }}
+                        clearCourse={clearCourse}
+                        clearSlots={clearSlots}
+                        clearTime={clearTime}
+                        clearDate={clearDate}
+                        clearSeat={clearSeat}
+                    >
+                        Change
+                    </BtnClrItem>
                 </SectionTitle>
 
                 {this.renderCourseList(courseReducer.coursePicked, courseReducer.status)}
@@ -49,7 +61,10 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         clearCourse: () => dispatch(actClearCourse()),
-        clearSlots: () => dispatch(actClearSlots())
+        clearSlots: () => dispatch(actClearSlots()),
+        clearDate: () => dispatch(actClearDate()),
+        clearTime: () => dispatch(actClearTime()),
+        clearSeat: () => dispatch(actClearSeat())
     }
 }
 

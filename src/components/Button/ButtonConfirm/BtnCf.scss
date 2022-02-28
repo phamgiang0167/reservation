@@ -1,0 +1,25 @@
+.btn-cf{
+    background-color: #00a49f;
+    
+    border: 1px solid #00a49f;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    @include mediaQueryMin("medium"){
+        font-size: 0.8rem;
+        padding: 12px 20px;
+    }
+    &:hover{
+        background-color: #087773;
+    }
+    &.disabled{
+        cursor: not-allowed;
+        pointer-events: none;
+        background-color: #99eeeb;
+        border-color:#99eeeb
+    }
+}

@@ -1,0 +1,27 @@
+.step2__wrapper{
+    .step2__policy{
+        padding: 20px;
+        font-size: 00.7rem;
+        @include mediaQueryMin("medium"){
+            font-size: 00.9rem;
+            padding: 30px 100px;
+            text-align: center;
+        }
+    }
+    
+    .step2__button{
+        display: flex;
+        .step2__btn{
+            width: 50%;
+            padding: 10px;
+            
+            &.step2__button-1{
+                button{
+                    float: right;
+                    height: 100%;
+                }
+            }
+        }
+        
+    } 
+}

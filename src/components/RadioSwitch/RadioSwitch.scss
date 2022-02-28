@@ -1,0 +1,14 @@
+.radio-group{
+    width: 100%;
+    tr,td{
+        border: 1px solid $color-gray-line;
+    }
+    td{
+        padding: 15px 20px;
+    }
+    label{
+        margin-left: 5px;
+    }
+    border-radius: 4px;
+    border-collapse: collapse;
+}

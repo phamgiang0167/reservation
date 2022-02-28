@@ -3,6 +3,9 @@ $homestep-pd-small: 5px;
 $homestep-pd-medium: 12px;
 $homestep-pd-large: 12px 20px;
 $homestep-bg:#d8d8d8;
+
+$homestep-fs: 0.7rem;
+$homestep-fs-medium: 0.8rem;
 .home__step{
     width: 100%;
     display: flex;
@@ -14,11 +17,14 @@ $homestep-bg:#d8d8d8;
         font-weight: bold;
         padding: $homestep-pd-small;
         line-height: 100%;
-        font-size: $homestep-fs-small;
+        font-size: $homestep-fs;
         text-align: center;
         position: relative;
+        font-size: 0.7rem;
+        align-items: center;
         @include mediaQueryMin('medium'){
             padding: $homestep-pd-medium;
+            font-size: $homestep-fs-medium;
         }
         @include mediaQueryMin('large'){
             padding: $homestep-pd-large;
@@ -26,12 +32,9 @@ $homestep-bg:#d8d8d8;
         &.step-1,&.step-2,&.step-3{
             background-color: $homestep-bg;
         }
-        &.step-1::after{
-            content: "";
-            
-            width: 0; 
-            height: 100%; 
-            
+        &.active{
+            background-color: #FAEBD7;
+            color: $color-gray-text-1;
         }
     }
     

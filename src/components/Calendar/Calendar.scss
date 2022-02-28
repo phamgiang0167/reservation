@@ -11,10 +11,16 @@
         color: $color-gray-text-1;
         
     }
-    .calendar__date{
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
+    .react-datepicker-wrapper{
+        .react-datepicker__input-container{
+            &::after{
+                content: "\f073";
+                font-family: 'Font Awesome\ 5 Free';
+                position: absolute;
+                left: 10%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 }

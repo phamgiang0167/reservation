@@ -1,7 +1,7 @@
 import {CLEAR_SLOTS, SELECT_SLOTS} from "../constants/SlotsConstant"
 const inititalState = {
     status: false,
-    slots: 0
+    slots: null
 }
 
 const slotsReducer = (state=inititalState, {type, payload}) => {

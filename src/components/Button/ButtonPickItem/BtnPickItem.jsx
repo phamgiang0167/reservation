@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-export default class BtnPickCourse extends Component {
+export default class BtnPickItem extends Component {
     render() {
-        const {style, pickCourse, data} = this.props
+        const {style, onClickAction, data} = this.props
         return (
-            <button className="btn-pick-course"
+            <button className="btn-pick-item"
                 style={style}
                 onClick={() => {
-                    pickCourse(data)
+                    onClickAction(data)
                 }}
             >
                 {this.props.children}

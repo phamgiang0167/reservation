@@ -10,14 +10,14 @@ class Slots extends Component {
             arr.push(i + 1)
         }
         return arr?.map((item, index) => {
-            return <option value={item} key={index}>{item} people</option>
+            return <option value={item} key={index} selected={this.props.slot == item}>{item} people</option>
         })
     }
     render() {
-        const { selectSlots } = this.props
+        const { selectSlots, slot } = this.props
         return (
             <select className='Slots' onChange={(e) => selectSlots(e.target.value)}>
-                <option value={null} disabled selected="true">Select slots</option>
+                <option value={0} disabled selected={this.props.slot == 0 ? "true" : "false"}>Select slots</option>
                 {this.renderOpt(10, 1)}
             </select>
         )
@@ -30,4 +30,10 @@ const mapDispatchToProps = dispatch => {
         } 
     }
 }
-export default connect(null, mapDispatchToProps)(Slots)
+
+const mapStateToProps = state => {
+    return {
+        slot: state.slotsReducer.slots
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Slots)
