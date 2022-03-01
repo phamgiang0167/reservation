@@ -1,0 +1,3 @@
+export const CHANGE_VALUE = "CHANGE_VALUE"
+export const CHANGE_VISIT = "CHANGE_VISIT"
+export const CLEAR_VALUE = "CLEAR_VALUE"

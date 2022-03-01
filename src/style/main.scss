@@ -2,30 +2,42 @@
 @import "Helpers/mixin";
 @import "Base/reset";
 @import "Helpers/extend";
-@import "../components/Nav/Nav.scss";
-@import "../components/Banner/Banner.scss";
-@import "../components/HomeSteps/HomeStep.scss";
-@import "../containers/Home/Home.scss";
-@import "../components/CourseItem/CourseItem.scss";
-@import "../templates/Course/Course.scss";
-@import "../components/Section_title/SectionTitle.scss";
-@import "../components/Button/ButtonClearItem/BtnClrItem.scss";
-@import "../components/Button/ButtonPickItem/BtnPickItem.scss";
-@import "../templates/SlotAndDate/SlotAndDate.scss";
-@import "../components/Slots/Slots.scss";
-@import "../components/Calendar/Calendar.scss";
-@import "../components/Quote/Quote.scss";
-@import "../components/TimeItem/TImeItem.scss";
-@import "../templates/Time/Time.scss";
-@import "../templates/Seat/Seat.scss";
-@import "../components/SeatItem/SeatItem.scss";
-@import "../components/Button/ButtonConfirm/BtnCf.scss";
-@import "../templates/Details/Details.scss";
-@import "../components/TimeDetail/TimeDetail.scss";
-@import "../components/FormatDetail/FormatDetail.scss";
-@import "../templates/Bonus/Bonus.scss";
-@import "../components/InputForm/InputForm.scss";
-@import "../templates/Form/Form.scss";
-@import "../components/RadioSwitch/RadioSwitch.scss";
-@import "../Views/Step2/Step2.scss";
-@import "../Views/Step3/Step3.scss"
+
+//pages
+@import "../pages/Home/Home.scss";
+
+//templates
+@import "../components/Templates/Step1/Step1.scss";
+@import "../components/Templates/Step2/Step2.scss";
+@import "../components/Templates/Step3/Step3.scss";
+
+//organisms
+@import "../components/Organisms/Course/Course.scss";
+@import "../components/Organisms/Details/Details.scss";
+@import "../components/Organisms/Form/Form.scss";
+@import "../components/Organisms/Seat/Seat.scss";
+@import "../components/Organisms/SlotAndDate/SlotAndDate.scss";
+@import "../components/Organisms/policy/Policy.scss";
+
+//molecules
+@import "../components/Molecules/CourseItem/CourseItem.scss";
+@import "../components/Molecules/RadioSwitch/RadioSwitch.scss";
+@import "../components/Molecules/SeatItem/SeatItem.scss";
+@import "../components/Molecules/Time/Time.scss";
+//atoms
+@import "../components/Atoms/Nav/Nav.scss";
+@import "../components/Atoms/Banner/Banner.scss";
+@import "../components/Atoms/Bonus/Bonus.scss";
+@import "../components/Atoms/ButtonClearItem/BtnClrItem.scss";
+@import "../components/Atoms/ButtonConfirm/BtnCf.scss";
+@import "../components/Atoms/ButtonPickItem/BtnPickItem.scss";
+@import "../components/Atoms/Calendar/Calendar.scss";
+@import "../components/Atoms/FormatDetail/FormatDetail.scss";
+@import "../components/Atoms/HomeSteps/HomeStep.scss";
+@import "../components/Atoms/InputForm/InputForm.scss";
+@import "../components/Atoms/Nav/Nav.scss";
+@import "../components/Atoms/Quote/Quote.scss";
+@import "../components/Atoms/Section_title/SectionTitle.scss";
+@import "../components/Atoms/Slots/Slots.scss";
+@import "../components/Atoms/TimeDetail/TimeDetail.scss";
+@import "../components/Atoms/TimeItem/TImeItem.scss";
