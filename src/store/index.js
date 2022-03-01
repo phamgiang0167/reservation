@@ -4,6 +4,7 @@ import slotsReducer from "./reducers/SlotsReducer";
 import dateReducer from "./reducers/DateReducer";
 import timeReducer from "./reducers/TimeReducer"
 import seatReducer from "./reducers/SeatReducer";
+import formReducer from "./reducers/FormReducer";
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 const rootReducer = combineReducers({
@@ -11,7 +12,8 @@ const rootReducer = combineReducers({
     slotsReducer,
     dateReducer,
     timeReducer,
-    seatReducer
+    seatReducer,
+    formReducer
 })
 
 const store = createStore(

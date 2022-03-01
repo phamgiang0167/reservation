@@ -1,0 +1,18 @@
+$banner-pd-small: 5px;
+$banner-pd-small-more: 12px;
+$banner-fs-small: 0.7rem;
+$banner-fs-small-more: 1rem;
+.banner{
+    padding: $banner-pd-small;
+    font-weight: bold;
+    font-size: $banner-fs-small;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    @include mediaQueryMin("medium"){
+        padding: $banner-pd-small-more;
+        font-size: $banner-fs-small-more;
+        text-align: left;
+    }
+    margin-bottom: 10px;
+}

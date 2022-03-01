@@ -1,12 +1,12 @@
 
-import Nav from './components/Nav/Nav';
+import Nav from './components/Atoms/Nav/Nav';
 import { Fragment } from 'react';
-import Home from './containers/Home/Home';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
     <Fragment>
-      <Nav />
+      <Nav>Retty</Nav>
       <Home />
     </Fragment>
   );
